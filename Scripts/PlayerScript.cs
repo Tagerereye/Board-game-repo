@@ -20,6 +20,7 @@ public class PlayerScript : MonoBehaviour
     public int experience;
     public int level;
     public int[] lvlupReq = { 0, 2, 4, 8, 16 };
+    public int abilityPoints = 0;
 
     public Sprite texture;
     public string playerClass;
@@ -120,11 +121,12 @@ public class PlayerScript : MonoBehaviour
     public void GainExp(int value)
     {
         experience += value;
-        if(experience >= lvlupReq[level])
+        while(experience >= lvlupReq[level])
         {
             experience -= lvlupReq[level];
             level++;
         }
+        abilityPoints++;
     }
     public void AddItem(Item item)
     {

@@ -13,7 +13,7 @@ public class LVL2camp : LVLcamp
         health = 8;
         damage = 3;
         gold = 20;
-        sprite = Resources.Load<Sprite>("Sprites/goblin");
+        sprite = Resources.Load<Sprite>("Sprites/spider");
         expYield = 2;
     }
     public override void CampAction()

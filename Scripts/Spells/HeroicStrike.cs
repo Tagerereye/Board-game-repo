@@ -8,11 +8,13 @@ public class HeroicStrike : Spell
     {
         name = "Heroic Strike";
         manaCost = 0;
+        learnCost = 1;
     }
     public override void Effect()
     {
         base.Effect();
-        if(isAgainstAI)
+        BattleScreenScript.combatLog.text = caster.gamename + " heroically strikes. ";
+        if (isAgainstAI)
         {
             caster.ApplyDamage(2 + caster.damage.Value());
         }

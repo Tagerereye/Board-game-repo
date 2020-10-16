@@ -44,7 +44,7 @@ public class BattleScreenScript : MonoBehaviour
     {
         //schimbi infatisarea board-ului
         leftFighter.GetChild(0).GetComponent<SpriteRenderer>().sprite = player.texture;
-        leftFighter.GetChild(2).GetComponent<TextMesh>().text = "Jucator";
+        leftFighter.GetChild(2).GetComponent<TextMesh>().text = "Template";
         leftFighter.GetChild(3).GetComponent<TextMesh>().text = player.currentHealth + "/" + player.maxHealth.Value();
 
         rightFighter.GetChild(0).GetComponent<SpriteRenderer>().sprite = camp.sprite;

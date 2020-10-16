@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spell
 {
     public string name;
-    public int manaCost;
+    public int manaCost, learnCost;
     public PlayerScript caster, enemy;
     public LVLcamp enemyAI;
     public bool isAgainstAI;
